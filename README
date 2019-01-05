@@ -5,4 +5,8 @@ SpringBoot详解-快速入门：  https://juejin.im/post/59a6dbf451882511264e93b
 
 Spring-boot常用注解整理： https://www.jianshu.com/p/8780854ba90c
 
-Spring Boot常用注解小结：https://www.jianshu.com/p/943a25dcbe96
+Spring Boot常用注解小结： https://www.jianshu.com/p/943a25dcbe96
+
+监控数据库连接池(阿里巴巴出品：druid): https://github.com/alibaba/druid/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98
+
+关于SpringBoot上传图片的几种方式： https://blog.csdn.net/wqh8522/article/details/78971260

@@ -14,6 +14,8 @@ import javax.sql.DataSource;
  * @author zpf
  * @date 2019/1/4 9:23
  *
+ * mybatis 配置
+ *
  * @Configuration
  * 表示该文件是一个配置文件@Bean表示该方法是一个传统xml配置文件中的<Bean id=""></Bean>
  *
