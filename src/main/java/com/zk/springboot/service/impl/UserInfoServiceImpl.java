@@ -1,7 +1,7 @@
 package com.zk.springboot.service.impl;
 
 import com.zk.springboot.dao.UserInfoMapper;
-import com.zk.springboot.model.UserInfo;
+import com.zk.springboot.model.UserInfoEntity;
 import com.zk.springboot.service.UserInfoService;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +19,7 @@ public class UserInfoServiceImpl implements UserInfoService {
     private UserInfoMapper userInfoMapper;
 
     @Override
-    public UserInfo selectById(Integer id) {
+    public UserInfoEntity selectById(Integer id) {
         return userInfoMapper.selectById(id);
     }
 }

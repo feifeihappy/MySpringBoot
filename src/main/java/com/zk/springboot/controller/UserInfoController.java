@@ -2,11 +2,10 @@ package com.zk.springboot.controller;
 
 import com.zk.springboot.core.ret.RetResponse;
 import com.zk.springboot.core.ret.RetResult;
-import com.zk.springboot.model.UserInfo;
+import com.zk.springboot.model.UserInfoEntity;
 import com.zk.springboot.service.UserInfoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -41,8 +40,8 @@ public class UserInfoController {
     @PostMapping("/selectById")
     public RetResult selectById(Integer id){
 
-        UserInfo userInfo = userInfoService.selectById(id);
-        return RetResponse.makeOKRsp(userInfo);
+        UserInfoEntity userInfoEntity = userInfoService.selectById(id);
+        return RetResponse.makeOKRsp(userInfoEntity);
     }
 
 

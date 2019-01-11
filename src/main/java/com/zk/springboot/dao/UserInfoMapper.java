@@ -1,6 +1,6 @@
 package com.zk.springboot.dao;
 
-import com.zk.springboot.model.UserInfo;
+import com.zk.springboot.model.UserInfoEntity;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -9,5 +9,5 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface UserInfoMapper {
 
-    UserInfo selectById(@Param("id") Integer id);
+    UserInfoEntity selectById(@Param("id") Integer id);
 }

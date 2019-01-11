@@ -1,12 +1,13 @@
 package com.zk.springboot.model;
 import javax.persistence.Column;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * @author zpf
  * @date 2019/1/4 9:26
  */
-public class UserInfo {
+public class UserInfoEntity implements Serializable {
 
     /**
      * 主键

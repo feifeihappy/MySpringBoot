@@ -10,3 +10,21 @@ Spring Boot常用注解小结： https://www.jianshu.com/p/943a25dcbe96
 监控数据库连接池(阿里巴巴出品：druid): https://github.com/alibaba/druid/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98
 
 关于SpringBoot上传图片的几种方式： https://blog.csdn.net/wqh8522/article/details/78971260
+
+SpringBoot获取参数的几种方式: https://www.jianshu.com/p/ee150654f712
+
+SpringBoot Controller接收参数的几种常用方式: https://blog.csdn.net/suki_rong/article/details/80445880
+
+@RequestBody :   https://juejin.im/post/5b5efff0e51d45198469acea
+
+Java数据类型和MySql数据类型对应表 : https://www.cnblogs.com/JemBai/archive/2009/08/20/1550683.html
+
+
+
+
+
+
+
+
+
+从零搭建自己的springboot后台框架：  https://github.com/MyBeany/mySpringBoot
