@@ -36,7 +36,6 @@ public class UserInfoController {
     public RetResult get(){
         return RetResponse.makeOKRsp();
     }
-
     @PostMapping("/selectById")
     public RetResult selectById(Integer id){
 
