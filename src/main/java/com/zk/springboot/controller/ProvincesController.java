@@ -18,6 +18,8 @@ import java.util.List;
  * @author zpf
  * @date 2019/1/11 16:09
  * 省市区
+ *
+ * 测试ssh 是否配置成功
  */
 @RestController
 @RequestMapping(path = "/provinces")
@@ -34,10 +36,6 @@ public class ProvincesController {
 
         List<ProvinceEntity> result = provincesServiceImpl.queryCityName(provinceEntity);
        return RetResponse.makeOKRsp(result);
-
-
-
-
 
     }
 

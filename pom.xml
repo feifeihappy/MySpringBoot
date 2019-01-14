@@ -58,11 +58,19 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.22</version>
         </dependency>
-
+        <!--添加PageHelper依赖 分页功能-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.2.5</version>
+        </dependency>
+
+        <!--通用 Mapper  通用 Mapper 是为了解决 MyBatis 使用中 90% 的基本操作，
+        使用它可以很方便的进行开发，可以节省开发人员大量的时间-->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>2.0.1</version>
         </dependency>
 
     </dependencies>
