@@ -4,7 +4,6 @@ package com.zk.springboot.core.ret;
  * @author zpf
  * @date 2019/1/5 15:56
  * 说明：code为状态码、msg为提示信息、data为返回的数据
- *
  */
 public class RetResult<T> {
 
@@ -24,9 +23,11 @@ public class RetResult<T> {
         this.code = code;
         return this;
     }
+
     public int getCode() {
         return code;
     }
+
     public String getMsg() {
         return msg;
     }

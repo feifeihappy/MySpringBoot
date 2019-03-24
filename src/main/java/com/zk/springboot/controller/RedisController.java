@@ -22,7 +22,7 @@ public class RedisController {
 
     @PostMapping("/setRedis")
     public RetResult<String> setRedis(String name) {
-        redisServiceImpl.set("name",name);
+        redisServiceImpl.set("name", name);
         return RetResponse.makeOKRsp(name);
     }
 
@@ -31,6 +31,4 @@ public class RedisController {
         String name = redisServiceImpl.get("name");
         return RetResponse.makeOKRsp(name);
     }
-
-
 }

@@ -1,10 +1,10 @@
 package com.zk.springboot.Exception;
 
 public interface IException {
-	String getErrorCode();
+    String getErrorCode();
 
-	void setErrorArguments(Object... paramVarArgs);
+    void setErrorArguments(Object... paramVarArgs);
 
-	Object[] getErrorArguments();
+    Object[] getErrorArguments();
 
 }

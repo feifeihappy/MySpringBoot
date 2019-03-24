@@ -15,6 +15,4 @@ public class CountryEntity implements Serializable {
     private Float surfacearea;
 
 
-
-
 }

@@ -18,9 +18,8 @@ public class GlobalDefaultExceptionHandler {
 
     public static final String DEFAULT_ERROR_VIEW = "error";
 
-    @ExceptionHandler({TypeMismatchException.class, NumberFormatException.class,NullPointerException.class})
+    @ExceptionHandler({TypeMismatchException.class, NumberFormatException.class, NullPointerException.class})
     public ModelAndView formatErrorHandler(HttpServletRequest req, Exception e) throws Exception {
-
 
 
         ModelAndView mav = new ModelAndView();

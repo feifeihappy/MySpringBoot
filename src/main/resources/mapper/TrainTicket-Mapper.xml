@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zk.springboot.dao.TrainTicketMapper">
+    <resultMap id="BaseResultMap" type="com.zk.springboot.model.TrainTicketEntity">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="province" property="province" jdbcType="VARCHAR"/>
+        <result column="city" property="city" jdbcType="INTEGER"/>
+        <result column="county" property="county" jdbcType="VARCHAR"/>
+        <result column="agency_name" property="agencyName" jdbcType="INTEGER"/>
+        <result column="address" property="address" jdbcType="VARCHAR"/>
+        <result column="phone_no" property="phoneNo" jdbcType="VARCHAR"/>
+        <result column="start_time_am" property="startTimeAm" jdbcType="TIME"/>
+        <result column="stop_time_am" property="stopTimeAm" jdbcType="TIME"/>
+        <result column="start_time_pm" property="startTimePm" jdbcType="TIME"/>
+        <result column="stop_time_pm" property="stopTimePm" jdbcType="TIME"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,province,city,
+        county,agency_name,address,
+        phone_no,start_time_am,stop_time_am,
+        start_time_pm,stop_time_pm
+    </sql>
+
+    <select id="queryTrainTicket"
+            parameterType="java.lang.String"
+            resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM ts_train_ticket
+        <where>
+            <if test='city!=null and city!=""'>
+                city = #{city,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
+
+</mapper>

@@ -10,9 +10,7 @@ import java.util.Date;
  * @author zpf
  * @date 2019/1/22 10:51
  * 开启定时任务的注解
- *
- * @Scheduled为设置定时任务周期的注解，参数常用的为两种：
- * 第一种
+ * @Scheduled为设置定时任务周期的注解，参数常用的为两种： 第一种
  * 就是fixedRate，他表示以一种固定频率去执行，单位为毫秒，
  * 例如@Scheduled(fixedRate = 5000)  表示为每五秒执行一次
  * 第二种
@@ -23,12 +21,12 @@ import java.util.Date;
 public class tesk {
 
     @Scheduled(fixedRate = 5000)
-    public void job1(){
+    public void job1() {
         System.out.println("定时任务1" + new Date());
     }
 
     @Scheduled(cron = "0/5 * * * * ?")
-    public void job2(){
+    public void job2() {
         System.out.println("定时任务2" + new Date());
     }
 

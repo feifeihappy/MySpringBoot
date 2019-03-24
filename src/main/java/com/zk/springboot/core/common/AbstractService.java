@@ -11,8 +11,8 @@ import java.util.List;
 import java.util.concurrent.locks.Condition;
 
 /**
- * @Description: 基于通用MyBatis Mapper插件的Service接口的实现
  * @author zpf
+ * @Description: 基于通用MyBatis Mapper插件的Service接口的实现
  * @date 2019/1/14 16:58
  */
 public abstract class AbstractService<T> implements Service<T> {
@@ -67,7 +67,7 @@ public abstract class AbstractService<T> implements Service<T> {
     }
 
     @Override
-    public List<T> selectListBy(String fieldName, Object value)  {
+    public List<T> selectListBy(String fieldName, Object value) {
         try {
             T model = modelClass.newInstance();
             Field field = modelClass.getDeclaredField(fieldName);
@@ -95,12 +95,12 @@ public abstract class AbstractService<T> implements Service<T> {
     }
 
     @Override
-    public List<T> select(T record){
+    public List<T> select(T record) {
         return mapper.select(record);
     }
 
     @Override
-    public T selectOne(T recoed){
+    public T selectOne(T recoed) {
         return mapper.selectOne(recoed);
     }
 }

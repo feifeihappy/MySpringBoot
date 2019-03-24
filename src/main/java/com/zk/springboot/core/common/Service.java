@@ -7,8 +7,7 @@ import java.util.concurrent.locks.Condition;
 
 /**
  * @author zpf
- * @Description:
- * Service层基础接口，其他Service接口请继承该接口
+ * @Description: Service层基础接口，其他Service接口请继承该接口
  * @date 2019/1/14 16:55
  */
 public interface Service<T> {

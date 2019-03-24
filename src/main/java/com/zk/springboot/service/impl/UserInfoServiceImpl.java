@@ -23,7 +23,7 @@ public class UserInfoServiceImpl extends AbstractService<UserInfoEntity> impleme
     @Override
     public UserInfoEntity selectById(String id) {
         UserInfoEntity userInfo = userInfoMapper.selectByPrimaryKey(id);
-        if(userInfo == null){
+        if (userInfo == null) {
             throw new BusinessException("暂无该用户");
         }
         return userInfo;

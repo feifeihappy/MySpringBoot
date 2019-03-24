@@ -14,9 +14,11 @@ public enum Continent {
     ANTARCTICA("Antarctica"),
     SOUTH_AMERICA("South America");
     private String value;
+
     Continent(String value) {
         this.value = value;
     }
+
     public String getValue() {
         return value;
     }

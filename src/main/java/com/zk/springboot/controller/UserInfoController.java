@@ -26,21 +26,22 @@ public class UserInfoController {
     @Resource
     private UserInfoService userInfoService;
 
-    @RequestMapping(path = "/hello",method = RequestMethod.GET)
-    public String hello(){
+    @RequestMapping(path = "/hello", method = RequestMethod.GET)
+    public String hello() {
         return "hello SpringBoot";
     }
 
     /**
-     * @GetMapping 请求
      * @return
+     * @GetMapping 请求
      */
     @GetMapping("/get")
-    public RetResult get(){
+    public RetResult get() {
         return RetResponse.makeOKRsp();
     }
+
     @PostMapping("/selectById")
-    public RetResult selectById(String id){
+    public RetResult selectById(String id) {
 
         UserInfoEntity userInfoEntity = userInfoService.selectById(id);
         return RetResponse.makeOKRsp(userInfoEntity);
@@ -59,13 +60,11 @@ public class UserInfoController {
     @PostMapping("/selectAll")
     public RetResult<PageInfo<UserInfoEntity>> selectAll(@RequestParam(defaultValue = "0") Integer page,
                                                          @RequestParam(defaultValue = "0") Integer size) {
-        PageHelper.startPage(page,size);
+        PageHelper.startPage(page, size);
         List<UserInfoEntity> userInfoList = userInfoService.selectAll();
         PageInfo<UserInfoEntity> pageInfo = new PageInfo<>(userInfoList);
         return RetResponse.makeOKRsp(pageInfo);
     }
-
-
 
 
 }

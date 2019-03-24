@@ -13,17 +13,13 @@ import javax.sql.DataSource;
 /**
  * @author zpf
  * @date 2019/1/4 9:23
- *
+ * <p>
  * mybatis 配置
- *
- * @Configuration
- * 表示该文件是一个配置文件@Bean表示该方法是一个传统xml配置文件中的<Bean id=""></Bean>
- *
+ * @Configuration 表示该文件是一个配置文件@Bean表示该方法是一个传统xml配置文件中的<Bean id=""></Bean>
+ * <p>
  * factory.setMapperLocations(resolver.getResources("classpath:mapper/*.xml"));
  * ;
  * 表示dao层的存储路径
- *
- *
  */
 @Configuration
 public class MybatisConfigurer {
@@ -40,6 +36,7 @@ public class MybatisConfigurer {
         mapperScannerConfigurer.setBasePackage("com.zk.springboot.dao");
         return mapperScannerConfigurer;
     }
+
     @Bean
     public SqlSessionFactory sqlSessionFactoryBean(DataSource dataSource) throws Exception {
         SqlSessionFactoryBean factory = new SqlSessionFactoryBean();
@@ -56,7 +53,6 @@ public class MybatisConfigurer {
         factory.setMapperLocations(resolver.getResources("classpath:mapper/*.xml"));
         return factory.getObject();
     }
-
 
 
 }

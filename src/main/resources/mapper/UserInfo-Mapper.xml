@@ -9,16 +9,16 @@
     </resultMap>
 
     <!--<sql id="Base_Column_List">-->
-      <!--id,user_name-->
+    <!--id,user_name-->
     <!--</sql>-->
 
     <!--<select id="queryCityName" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
-        <!--SELECT-->
-        <!--<include refid="Base_Column_List"/>-->
-        <!--FROM user_info-->
-        <!--<where>-->
-            <!--ID = #{id,jdbcType=VARCHAR}-->
-        <!--</where>-->
+    <!--SELECT-->
+    <!--<include refid="Base_Column_List"/>-->
+    <!--FROM user_info-->
+    <!--<where>-->
+    <!--ID = #{id,jdbcType=VARCHAR}-->
+    <!--</where>-->
     <!--</select>-->
 
 </mapper>

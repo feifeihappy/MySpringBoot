@@ -15,14 +15,15 @@ import java.util.List;
 /**
  * @author zpf
  * @date 2019/1/5 17:05
- *
- *  消息转换器
+ * <p>
+ * 消息转换器
  */
 @Configuration
 public class WebConfigurer extends WebMvcConfigurationSupport {
 
     /**
      * 修改自定义消息转换器
+     *
      * @param converters
      */
     @Override

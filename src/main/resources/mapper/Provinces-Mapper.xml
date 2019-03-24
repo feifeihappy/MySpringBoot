@@ -3,38 +3,38 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zk.springboot.dao.ProvincesMapper">
     <resultMap id="BaseResultMap" type="com.zk.springboot.model.ProvinceEntity">
-        <id column="ID" property="id" jdbcType="VARCHAR" />
-        <result column="cityName" property="cityName" jdbcType="VARCHAR" />
-        <result column="parentId" property="parentId" jdbcType="INTEGER" />
-        <result column="shortName" property="shortName" jdbcType="VARCHAR" />
-        <result column="depth" property="depth" jdbcType="INTEGER" />
-        <result column="cityCode" property="cityCode" jdbcType="VARCHAR" />
-        <result column="zipCode" property="zipCode" jdbcType="VARCHAR" />
-        <result column="mergerName" property="mergerName" jdbcType="VARCHAR" />
-        <result column="longitude" property="longitude" jdbcType="VARCHAR" />
-        <result column="latitude" property="latitude" jdbcType="VARCHAR" />
-        <result column="pinyin" property="pinyin" jdbcType="VARCHAR" />
-        <result column="isUse" property="isUse" jdbcType="INTEGER" />
+        <id column="ID" property="id" jdbcType="VARCHAR"/>
+        <result column="cityName" property="cityName" jdbcType="VARCHAR"/>
+        <result column="parentId" property="parentId" jdbcType="INTEGER"/>
+        <result column="shortName" property="shortName" jdbcType="VARCHAR"/>
+        <result column="depth" property="depth" jdbcType="INTEGER"/>
+        <result column="cityCode" property="cityCode" jdbcType="VARCHAR"/>
+        <result column="zipCode" property="zipCode" jdbcType="VARCHAR"/>
+        <result column="mergerName" property="mergerName" jdbcType="VARCHAR"/>
+        <result column="longitude" property="longitude" jdbcType="VARCHAR"/>
+        <result column="latitude" property="latitude" jdbcType="VARCHAR"/>
+        <result column="pinyin" property="pinyin" jdbcType="VARCHAR"/>
+        <result column="isUse" property="isUse" jdbcType="INTEGER"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-      ID,CITYNAME,PARENTID,
-      SHORTNAME,DEPTH,CITYCODE,
-      ZIPCODE,MERGERNAME,LONGITUDE,
-      LATITUDE,PINYIN,ISUSE
+        ID,CITYNAME,PARENTID,
+        SHORTNAME,DEPTH,CITYCODE,
+        ZIPCODE,MERGERNAME,LONGITUDE,
+        LATITUDE,PINYIN,ISUSE
     </sql>
 
-    <select id="queryCityName"
-            parameterType="com.zk.springboot.model.ProvinceEntity"
-            resultMap="BaseResultMap">
-        SELECT
-        <include refid="Base_Column_List"/>
-        FROM S_PROVINCES
-        <where>
-            <if test='cityName!=null and cityName!=""'>
-                CITYNAME = #{cityName,jdbcType=VARCHAR}
-            </if>
-        </where>
-    </select>
+    <!--<select id="queryCityName"-->
+    <!--parameterType="com.zk.springboot.model.ProvinceEntity"-->
+    <!--resultMap="BaseResultMap">-->
+    <!--SELECT-->
+    <!--<include refid="Base_Column_List"/>-->
+    <!--FROM S_PROVINCES-->
+    <!--<where>-->
+    <!--<if test='cityName!=null and cityName!=""'>-->
+    <!--CITYNAME = #{cityName,jdbcType=VARCHAR}-->
+    <!--</if>-->
+    <!--</where>-->
+    <!--</select>-->
 
 </mapper>

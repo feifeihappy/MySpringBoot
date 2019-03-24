@@ -11,7 +11,7 @@ import javax.servlet.MultipartConfigElement;
  * @author zpf
  * @date 2019/1/7 9:39
  */
-public class WebAppConfig  extends WebMvcConfigurationSupport {
+public class WebAppConfig extends WebMvcConfigurationSupport {
 
     /**
      * 在配置文件中配置的文件保存路径
@@ -20,7 +20,7 @@ public class WebAppConfig  extends WebMvcConfigurationSupport {
     private String location;
 
     @Bean
-    public MultipartConfigElement multipartConfigElement(){
+    public MultipartConfigElement multipartConfigElement() {
         MultipartConfigFactory factory = new MultipartConfigFactory();
         //文件最大KB,MB
         factory.setMaxFileSize("2MB");
